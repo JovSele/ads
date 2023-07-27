@@ -24,7 +24,7 @@ async function sendMessage() {
     await page.goto(telegramUrl);
 
     //write console.log - it is not necessary
-    //console.log('Message sent successfully to Telegram group!');
+    console.log('Message sent successfully to Telegram group!');
 
     await browser.close();
   } catch (err) {
