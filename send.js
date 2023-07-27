@@ -23,7 +23,8 @@ async function sendMessage() {
     const telegramUrl = `https://api.telegram.org/bot${process.env.TOKEN}/sendMessage?chat_id=${process.env.CHAT_ID}&text=${encodeURIComponent(message)}`;
     await page.goto(telegramUrl);
 
-    console.log('Message sent successfully to Telegram group!');
+    //write console.log - it is not necessary
+    //console.log('Message sent successfully to Telegram group!');
 
     await browser.close();
   } catch (err) {
